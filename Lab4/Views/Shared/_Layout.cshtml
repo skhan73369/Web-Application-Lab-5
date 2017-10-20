@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <a href="/Home/Index">Index</a>
+    @Html.ActionLink("PageTwo", "PageTwo", "Home", new { id = 5})
+    <a href="/Person/PersonIndex">Person Index</a>
+    <div>
+        @RenderBody()
+    </div>
+
+</body>
+    
+</html>

@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "PageTwo";
+}
+
+<h3>Items</h3>
+<ol>
+    @foreach (var item in Model)
+    {
+        <li> Item @item </li>
+    }
+</ol>
+<div>
+    <h3>Boxes</h3>
+    @for (int i = 1; i <= (int)ViewData["Count"]; i++)
+    {
+        <div class="Box"> @i </div>
+    }
+</div>
+@Html.ActionLink("Go Back", "Index", "Home")

@@ -1,0 +1,27 @@
+﻿@model Lab4.Models.Person
+
+
+@{
+    ViewData["Title"] = "PersonIndex";
+}
+
+<h2>Person Index</h2>
+
+<div>@ViewData["ErrorMessage"]</div>
+
+@if (@Model.FirstName == null)
+{
+    <div>No Person Detail</div>
+
+}
+else
+{
+<div>First Name: @Model.FirstName</div>
+<div>Last Name: @Model.LastName</div>
+<div>BirthDate: @Model.BirthDate</div>
+<div>Age: @Model.Age</div>
+}
+<p></p>
+<p></p>
+<p></p>
+<a href="/Person/AddPerson">Add Person</a>
